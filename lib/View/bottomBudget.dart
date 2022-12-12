@@ -20,7 +20,12 @@ class _bottomBudgetState extends State<bottomBudget> {
               icon: Icon(Icons.close)),
         ),
         body: Row(
-          children: [],
+          children: [
+            TextField(
+              decoration: InputDecoration(border: OutlineInputBorder()),
+            ),
+            ElevatedButton(onPressed: (() {}), child: Text('Save'))
+          ],
         ));
   }
 }
